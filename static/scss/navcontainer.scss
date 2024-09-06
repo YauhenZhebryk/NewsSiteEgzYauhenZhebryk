@@ -1,0 +1,53 @@
+@use 'var' as *;
+
+.icons-block{
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+}
+.icons-block>img{
+    width: 3em;
+}
+.icons-block>p{
+    font-size: 2em;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+}
+.central-header{
+    display: flex;
+    flex-direction: row;
+}
+.icons-block:hover{
+    background-color: $secondColor;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.input-main{
+    height: 80%;
+    margin: 0.3em;
+    border-radius: 2em;
+}
+.header-img>img{
+    width: 5em;
+}
+.header-img{
+    margin-inline: 0.5em;
+    margin-top: 0.3em;
+}
+.main-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.user-img{
+    margin-inline: 0.5em;
+}
+.user-img>img{
+    width: 5em;
+}
+@media(max-width:$breakpoint){
+    .central-header{
+        display: none;
+    }
+}

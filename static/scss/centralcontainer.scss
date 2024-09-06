@@ -1,0 +1,56 @@
+@use 'var' as *;
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Space Grotesk", sans-serif;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.central-container .text h2{
+    font-size: 3em;
+    border-bottom-style:solid ;
+    padding: 0.2em;
+}
+.central-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.block img{
+    width: 100%;
+}
+.block{
+    padding: 1em;
+    cursor: pointer;
+    
+}
+.central-block ul{
+    list-style: none;
+}
+.list .block img{
+    width: 30%;
+}
+.list .block{
+    display: flex;
+    flex-direction: row;
+}
+.central-container p{
+    padding: 0.3em;
+    font-weight: 500;
+}
+.block:hover{
+    background-color: $secondColor;
+}
+
+@media(max-width:$breakpoint){
+    .central-block{
+        display: flex;
+        flex-direction: column;
+    }
+}

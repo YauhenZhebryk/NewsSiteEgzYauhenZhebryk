@@ -1,0 +1,50 @@
+@use 'var' as *;
+
+.head-block{
+    display: inline-block;
+    padding: 1em;
+    border-style: solid;
+    width: 100%;
+    text-align: center;
+}
+.head-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.head-block p{
+    font-weight: 500;
+    margin-top: 0.5em;
+
+}
+.head-block:hover{
+    cursor: pointer;
+    background-color:$firstColor ;
+}
+.line{
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: $thirdColor;
+}
+.head-blockhide p{
+    font-weight: 500;
+    margin-top: 0.5em;
+
+}
+.head-blockhide:hover{
+    cursor: pointer;
+    background-color:$firstColor ;
+}
+.head-blockhide{
+    display: inline-block;
+    padding: 1em;
+    border-style: solid;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width:$breakpoint){
+    .head-blockhide{
+        display: none;
+    }
+}
